@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asm>
+	<dest key="null" >000</dest>
+	<dest key="M" >001</dest>
+	<dest key="D">010</dest>
+	<dest key="MD">011</dest>
+	<dest key="A">100</dest>
+	<dest key="AM">101</dest>
+	<dest key="AD">110</dest>
+	<dest key="AMD">111</dest>
+
+	<comp key="0">101010</comp>
+	<comp key="1" >111111</comp>
+	<comp key="-1">111010</comp>
+	<comp key="D" >001100</comp>
+	<comp key="A" >110000</comp>
+	<comp key="!D" >001101</comp>
+	<comp key="!A" >110001</comp>
+	<comp key="-D" >001111</comp>
+	<comp key="-A" >110011</comp>
+	<comp key="D+1">011111</comp>
+	<comp key="A+1">110111</comp>
+	<comp key="D-1" >001110</comp>
+	<comp key="A-1" >110010</comp>
+	<comp key="D+A" >000010</comp>
+	<comp key="D-A" >010011</comp>
+	<comp key="A-D" >000111</comp>
+	<comp key="D&amp;A">000000</comp>
+	<comp key="D|A">010101</comp>
+	<!--If A= True-->
+
+	<compM key="M" >110000</compM>
+	<compM key="!M" >110001</compM>
+	<compM key="-M" >110011</compM>
+	<compM key="M+1" >110111</compM>
+	<compM key="M-1" >110010</compM>
+	<compM key="D+M" >000010</compM>
+	<compM key="D-M" >010011</compM>
+	<compM key="M-D" >000111</compM>
+	<compM key="D&amp;M" >000000</compM>
+	<compM key="D|M" >010101</compM>
+
+	<jump key="null">000</jump>
+	<jump key="JGT">001</jump>
+	<jump key="JEQ" >010</jump>
+	<jump key="JGE" >011</jump>
+	<jump key="JLT" >100</jump>
+	<jump key="JNE" >101</jump>
+	<jump key="JLE" >110</jump>
+	<jump key="JMP" >111</jump>
+</asm>
